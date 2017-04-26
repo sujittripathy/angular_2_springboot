@@ -12,6 +12,7 @@ public class ListController {
 
 	private static final List<String> COURSES = Arrays.asList("Angularjs", "Angular", "Reactjs", "Emberjs", "Vuejs");
 
+	@CrossOrigin(origins = "http://localhost:4200")
 	@RequestMapping(value = "api/courses", method = RequestMethod.GET)
 	public List<String> handleCoursesList() {
 		System.out.println("it' works!!");
